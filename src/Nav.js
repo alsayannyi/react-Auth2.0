@@ -43,8 +43,8 @@ class Nav extends Component {
           )}
           {isAuthenticated() && userHasScopes(["read:courses"]) && (
             <li className="nav-item">
-              <Link className="nav-link" to="/courses">
-                Courses
+              <Link className="nav-link" to="/about">
+                What's all About
               </Link>
             </li>
           )}

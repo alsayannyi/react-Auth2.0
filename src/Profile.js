@@ -37,7 +37,11 @@ class Profile extends Component {
             <p className="col">{profile.nickname}</p>
           </div>
           <div className="row">
-            <pre className="col">{JSON.stringify(profile, null, 2)}</pre>
+            <kbd className="col">
+              <pre style={{ color: "var(--cyan)" }}>
+                {JSON.stringify(profile, null, 2)}
+              </pre>
+            </kbd>
           </div>
         </div>
       </>
